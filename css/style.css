@@ -1,7 +1,15 @@
+/* Bases */
+
 html {
   margin: auto;
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+/* UI colors and fonts */
 
 .main-color {
   color: #0065fc;
@@ -37,4 +45,49 @@ html {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 55px;
+  margin-right: 52.5px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-left: 0;
+  gap: 18px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header img {
+  height: 19px;
+  padding-top: 44px;
+}
+
+nav ul li {
+  padding-top: 48px;
+  display: block;
+  padding-left: 24.5px;
+  padding-right: 24.5px;
+}
+
+nav ul li:hover {
+  border-top: 2px solid #0065fc;
+  padding-top: 46px;
+}
+
+nav ul li:hover a {
+  font-weight: 500;
+  color: #0065fc;
 }

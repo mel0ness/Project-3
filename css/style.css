@@ -514,7 +514,8 @@ p.stars {
     gap: 10px;
     justify-content: flex-start;
     align-items: center;
-    max-width: 100%;
+    max-width: 98%;
+    margin-left: 0;
   }
 
   .filters .grid-line {

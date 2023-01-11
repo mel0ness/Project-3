@@ -510,6 +510,7 @@ p.stars {
     gap: 10px;
     justify-content: flex-start;
     align-items: center;
+    max-width: 100%;
   }
 
   .filters .grid-line {
@@ -613,7 +614,8 @@ p.stars {
     flex-direction: column;
   }
   .populaires a {
-    width: 85%;
+    width: 334px;
+    max-width: 85%;
   }
   .two {
     height: 144px;
@@ -634,7 +636,8 @@ p.stars {
     align-items: center;
   }
   .main__flex--1 a {
-    width: 90%;
+    width: 335px;
+    max-width: 85%;
   }
   .one img {
     height: 124px;

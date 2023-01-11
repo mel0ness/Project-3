@@ -369,9 +369,9 @@ button {
 }
 
 .one {
-  height: 234px;
+  height: 205.4px;
   flex-direction: column;
-  row-gap: 9px;
+  row-gap: 0;
 }
 
 .one img {
@@ -383,6 +383,7 @@ button {
 
 .one h3 {
   margin-left: 1.1em;
+  height: 40px;
 }
 
 .one p {
@@ -390,6 +391,9 @@ button {
   margin-left: 16px;
 }
 
+.one p.star-line {
+  margin-top: 9px;
+}
 .one i {
   color: #0065fc;
   font-size: 16px;
@@ -449,7 +453,7 @@ p.stars {
 /* components-3 */
 
 .three {
-  height: 445px;
+  height: 465px;
   flex-direction: column;
   border: none;
   position: relative;

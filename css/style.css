@@ -4,9 +4,15 @@ html {
   margin: auto;
   box-sizing: border-box;
 }
-main {
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container__max-width {
+  width: 100%;
   max-width: 1400px;
-  margin: auto;
 }
 
 body,
@@ -16,25 +22,6 @@ h3 {
 }
 
 /* UI colors and fonts */
-
-.main-color {
-  color: #0065fc;
-}
-
-.secondary-color {
-  color: #deebff;
-}
-
-.back-color {
-  color: #f2f2f2;
-}
-
-.logo {
-  font-family: "Sulphur Point", sans-serif;
-  font-size: 88px;
-  font-weight: 700;
-}
-
 .title,
 h1 {
   font-family: "Raleway", sans-serif;
@@ -61,6 +48,11 @@ div {
   font-weight: 400;
 }
 
+i {
+  color: #0065fc;
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -73,8 +65,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 0 52.5px 60px 55px;
-  max-width: 1292.5px;
-  margin: auto;
 }
 
 nav ul {
@@ -91,10 +81,8 @@ header img {
 }
 
 nav ul li {
-  padding-top: 48px;
+  padding: 48px 24.5px 0 24.5px;
   display: block;
-  padding-left: 24.5px;
-  padding-right: 24.5px;
 }
 
 nav ul li:hover {
@@ -159,13 +147,11 @@ button {
 
 input {
   border: solid 1px #f2f2f2;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 17px;
+  padding: 14px 0 14px 17px;
   width: 250px;
 }
 
-i {
+.map i {
   color: black;
   font-size: 20px;
 }
@@ -209,24 +195,18 @@ button {
   display: flex;
   flex-direction: row;
   width: 860px;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-bottom: 36px;
-  margin-left: 7px;
-  gap: 16px;
+  gap: 2%;
 }
 
 .filters h2 {
   font-size: 18px;
 }
 
-.filters i {
-  color: #0065fc;
-  margin-right: 10px;
-}
-
 .grid-line {
   display: flex;
-  gap: 23px;
+  gap: 20px;
 }
 
 .filters .grid-line div {
@@ -237,6 +217,7 @@ button {
   border: 2px solid #d9d9d9;
   border-radius: 25px;
   padding: 14px 14px 16px 14px;
+  gap: 10px;
 }
 
 .filters .grid-line div:hover {
@@ -247,8 +228,7 @@ button {
 /* infos */
 
 .infos {
-  margin-bottom: 39px;
-  margin-left: 4px;
+  margin: 0 0 39px 4px;
 }
 
 .infos i {
@@ -256,8 +236,104 @@ button {
   padding: 7px 10px 7px 10px;
   border: 2px solid #f2f2f2;
   border-radius: 100%;
-  color: #0065fc;
   margin-right: 11px;
+}
+
+/* carte-1  */
+
+.components {
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid white;
+  background-color: white;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.one {
+  height: 205.4px;
+  flex-direction: column;
+}
+
+.one img {
+  height: 114px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.one h3 {
+  margin-left: 1.1em;
+  height: 40px;
+}
+
+.one p {
+  font-size: 0.9em;
+  margin-left: 16px;
+}
+
+.one p.star-line {
+  margin-top: 9px;
+}
+
+/* carte-2 */
+
+.two {
+  height: 164px;
+  flex-direction: row;
+  position: relative;
+}
+
+.two-flex {
+  display: flex;
+  row-gap: 7px;
+  flex-direction: column;
+}
+
+.two img {
+  height: 100%;
+  width: 127px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.two h3 {
+  margin: 10px 0 0 15px;
+  font-size: 1.1em;
+}
+
+.two p {
+  font-size: 0.9em;
+  margin-left: 15px;
+}
+
+p.stars {
+  margin: 0 0 7px 15px;
+  position: absolute;
+  bottom: 0;
+}
+
+i.last-star {
+  color: #f2f2f2;
+}
+
+/* carte-3 */
+
+.three {
+  height: 465px;
+  flex-direction: column;
+  border: none;
+  position: relative;
+}
+
+.three img {
+  height: 389px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.three h3 {
+  margin: 10px 0 0 19px;
 }
 
 /* carte hébergements à Marseilles */
@@ -301,10 +377,6 @@ button {
   align-items: center;
 }
 
-.populaires h1 {
-  margin: 0 0 23px 0;
-}
-
 .populaires a {
   width: 90%;
   margin-bottom: 33px;
@@ -333,7 +405,6 @@ button {
 .flex-title--center {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .flex-title--center i {
@@ -360,123 +431,20 @@ button {
   flex: 1;
 }
 
-.components {
-  display: flex;
-  border-radius: 20px;
-  border: 5px solid white;
-  background-color: white;
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
-}
-
-.one {
-  height: 205.4px;
-  flex-direction: column;
-  row-gap: 0;
-}
-
-.one img {
-  height: 114px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.one h3 {
-  margin-left: 1.1em;
-  height: 40px;
-}
-
-.one p {
-  font-size: 0.9em;
-  margin-left: 16px;
-}
-
-.one p.star-line {
-  margin-top: 9px;
-}
-.one i {
-  color: #0065fc;
-  font-size: 16px;
-}
-
-.one i.last-star {
-  color: #f2f2f2;
-}
-
-/* components-2 */
-
-.two {
-  height: 164px;
-  flex-direction: row;
-  position: relative;
-}
-
-.two-flex {
-  display: flex;
-  row-gap: 7px;
-  flex-direction: column;
-}
-
-.two img {
-  height: 100%;
-  width: 127px;
-  object-fit: cover;
-  border-radius: 20px 0 0 20px;
-}
-
-.two h3 {
-  margin: 10px 0 0 15px;
-  font-size: 1.1em;
-}
-
-.two p {
-  font-size: 0.9em;
-  margin-left: 15px;
-}
-
-p.stars {
-  font-size: 14px;
-  margin: 0 0 7px 15px;
-  position: absolute;
-  bottom: 0;
-}
-
-.two i {
-  color: #0065fc;
-  font-size: 12px;
-}
-
-.two i.last-star {
-  color: #f2f2f2;
-}
-
-/* components-3 */
-
-.three {
-  height: 465px;
-  flex-direction: column;
-  border: none;
-  position: relative;
-}
-
-.three img {
-  height: 389px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.three h3 {
-  margin: 10px 0 0 19px;
-}
-
-@media screen and (min-width: 1400px) {
-  footer {
-    max-width: 1299px;
-  }
-}
-
 @media screen and (max-width: 992px) {
+  .filters {
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .filters .grid-line {
+    gap: 10px;
+  }
+
+  .filters .grid-line div {
+    padding: 7px 7px 7px 7px;
+  }
+
   .logements {
     flex-direction: column;
   }
@@ -496,7 +464,6 @@ p.stars {
   }
   .two {
     height: 195px;
-    width: 95%;
   }
   .two img {
     width: 106px;
@@ -507,24 +474,14 @@ p.stars {
   .two p {
     font-size: 13px;
   }
+
+  .two i {
+    font-size: 12px;
+  }
   footer {
     gap: 14%;
   }
-  .filters {
-    gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 98%;
-    margin-left: 0;
-  }
 
-  .filters .grid-line {
-    gap: 10px;
-  }
-
-  .filters .grid-line div {
-    padding: 7px 7px 7px 7px;
-  }
   .three {
     height: 267px;
   }
@@ -595,7 +552,6 @@ p.stars {
   }
 
   .grid-line {
-    display: flex;
     justify-content: center;
     width: 100%;
   }
@@ -604,7 +560,6 @@ p.stars {
     font-size: 11px;
     width: 220px;
     max-width: 70%;
-    margin: auto;
   }
   /* hébergements */
 
@@ -671,7 +626,6 @@ p.stars {
     max-width: 85%;
   }
   .three {
-    width: 100%;
     height: 190px;
   }
 

@@ -277,7 +277,7 @@ button {
 /* carte-2 */
 
 .two {
-  height: 164px;
+  height: 160px;
   flex-direction: row;
   position: relative;
 }
@@ -452,7 +452,7 @@ ________________________________________________________________________________
   /* carte-2 */
 
   .two {
-    height: 195px;
+    height: 144px;
   }
   .two img {
     width: 106px;
@@ -489,8 +489,9 @@ ________________________________________________________________________________
     flex-direction: row;
   }
   .flex-title {
-    justify-content: space-around;
-    gap: 50%;
+    justify-content: space-between;
+    width: unset;
+    margin: 42px 20px 26px 20px;
   }
 
   .populaires {

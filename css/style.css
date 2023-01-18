@@ -297,11 +297,11 @@ button {
 
 .two h3 {
   margin: 10px 0 0 15px;
-  font-size: 1.1em;
+  font-size: 16px;
 }
 
 .two p {
-  font-size: 0.9em;
+  font-size: 14px;
   margin-left: 15px;
 }
 
@@ -357,7 +357,7 @@ i.last-star {
 
 .main h2 {
   font-size: 18px;
-  margin: 40px 0 46px 40px;
+  margin: 60px 0 30px 40px;
 }
 
 .main h1 {
@@ -388,18 +388,19 @@ i.last-star {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
+  gap: 20px;
 }
 
 .populaires a {
   width: 90%;
-  margin-bottom: 33px;
 }
 
 .flex-title {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin: 42px 0 26px 0;
+  margin: 34px 0 26px 0;
   gap: 15%;
 }
 

@@ -95,32 +95,6 @@ nav ul li:hover a {
   color: #0065fc;
 }
 
-/* footer */
-
-footer {
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 17%;
-  padding-left: 70px;
-  max-width: 87%;
-  margin: auto;
-}
-
-footer ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-footer h1 {
-  margin-bottom: 20px;
-}
-
-footer ul li {
-  margin-bottom: 12px;
-}
-
 /* Main (Titles and filters) */
 
 .layout-one {
@@ -432,6 +406,33 @@ i.last-star {
 .activities__flex a {
   flex: 1;
 }
+
+/* footer */
+
+footer {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 17%;
+  padding-left: 70px;
+  max-width: 87%;
+  margin: auto;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer h1 {
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin-bottom: 12px;
+}
+
 /* 
 
 Media querries 992
